@@ -1,0 +1,53 @@
+@use 'variables';
+
+.card {
+    padding: 10px;
+    width: 300px;
+    border-radius: 18px;
+    background: variables.$card-color;
+    box-shadow: 2px 4px 12px 10px #00000014;
+    transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: variables.$dark;
+  }
+  
+  .card img {
+    align-self: center;
+  }
+  
+  .card h2 {
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card p {
+      font-size: 24px;
+      padding: 5px 0;
+      span {
+          font-weight: 600;
+      }
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .buttons button,
+  .delBtn {
+    margin: 5px auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  .buttons .delBtn {
+    margin-left: 120px;
+    background-color: rgb(235, 177, 177);
+  }
+  

@@ -1,0 +1,42 @@
+@use "variables";
+@use "navbar";
+@use "navMain";
+@use "dashboard";
+@use "addProduct";
+@use "form";
+@use "todo";
+@use "productCard";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: variables.$bkc;
+  font-family: variables.$main-font;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 30px;
+}
+
+h1 {
+  color: variables.$nav-color;
+  padding-bottom: 10px;
+}
+
+.description {
+    justify-self: flex-start;
+    padding-top: 20px;
+    padding-left: 20%;
+    font-size: 1em;
+    color: variables.$nav-color;
+    span {
+        font-weight: 800;
+        font-size: 2em;
+        color: variables.$nav-color;
+    }
+}

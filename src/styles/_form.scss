@@ -1,0 +1,31 @@
+@use 'variables';
+.formValidation {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+  .btn {
+    padding: 0.75rem;
+    background-color: variables.$bg-nav;
+    color: variables.$nav-color;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+.formField {
+  margin-bottom: 1rem;
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    input {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+    }
+  }
+  span {
+    color: red;
+    font-size: 0.875rem;
+  }
+}
