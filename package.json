@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server-todos": "json-server --watch todolist.json --port 3001",
-    "server-products": "json-server --watch products.json --port 3002"
+    "server-products": "json-server --watch products.json --port 3002",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -26,6 +27,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
+    "gh-pages": "^6.2.0",
     "globals": "^15.12.0",
     "json-server": "^1.0.0-beta.3",
     "vite": "^6.0.1"
